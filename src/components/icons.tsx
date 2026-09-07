@@ -149,6 +149,34 @@ const P: Record<string, ReactNode> = {
   ),
   flag: <path d="M5 21V4m0 1h13l-2.5 4L18 13H5" />,
   zap: <path d="M13 2 4.7 13.2h6L9.6 22l8.7-11.2h-6z" />,
+  hash: (
+    <>
+      <path d="M4 9h16M4 15h16M9 3l-2 18M17 3l-2 18" />
+    </>
+  ),
+  compass: (
+    <>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M15 9l-3 6-3-6 6 3z" fill="currentColor" stroke="none" />
+    </>
+  ),
+  grid3x3: (
+    <>
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+    </>
+  ),
+  eye: (
+    <>
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+      <circle cx="12" cy="12" r="3" />
+    </>
+  ),
+  wand: (
+    <>
+      <path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8 19 13M17.8 6.2 19 5M3 21l9-9" />
+    </>
+  ),
   arrowUp: <path d="M12 19V5m-6 6 6-6 6 6" />,
   arrowDown: <path d="M12 5v14m6-6-6 6-6-6" />,
 };

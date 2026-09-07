@@ -13,6 +13,12 @@ import { Stroop, TargetTap, VisualScan } from "../games/focus";
 import { QuickMatch, RapidSort, ReactionGrid } from "../games/speed";
 import { OddOneOut, PatternComplete, RuleSwitch } from "../games/logic";
 import { MentalMath, NumberSequence, WordScramble } from "../games/language";
+import { NBack } from "../games/nback";
+import { DistractionFilter, NumberGrid, SpeedFind, VocabMatch } from "../games/extras";
+import { MentalRotation, MazeNavigator, MirrorImage } from "../games/spatial";
+import { Crossword } from "../games/crossword";
+import { Sudoku } from "../games/sudoku";
+import { WordSearch } from "../games/wordsearch";
 import { Icon } from "./icons";
 import { Badge, Button, Card, LinkButton, Modal } from "./ui";
 
@@ -32,6 +38,17 @@ const COMPONENTS: Record<string, ComponentType<GameProps>> = {
   "word-scramble": WordScramble,
   "mental-math": MentalMath,
   "number-sequence": NumberSequence,
+  "n-back": NBack,
+  "crossword": Crossword,
+  "word-search": WordSearch,
+  "vocab-match": VocabMatch,
+  "speed-find": SpeedFind,
+  "distraction-filter": DistractionFilter,
+  "sudoku": Sudoku,
+  "mental-rotation": MentalRotation,
+  "maze-navigator": MazeNavigator,
+  "mirror-image": MirrorImage,
+  "number-grid": NumberGrid,
 };
 
 type Phase = "intro" | "countdown" | "playing" | "results";

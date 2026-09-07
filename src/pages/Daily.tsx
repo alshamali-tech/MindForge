@@ -17,6 +17,7 @@ export default function Daily() {
   const workout = useMemo(() => dailyWorkout(day), [day]);
   const prog = daily[day];
   const done = prog?.done.length ?? 0;
+  const TOTAL_DAILY = 7;
   const { current: streak, longest } = streakInfo(daily);
 
   const dateStr = new Intl.DateTimeFormat(lang === "ar" ? "ar-EG-u-nu-latn" : "en-US", { weekday: "long", month: "long", day: "numeric" }).format(new Date());
@@ -53,11 +54,11 @@ export default function Daily() {
           <span>{t("dash.dailyProgress", { d: done })}</span>
           <span className="tabular font-mono text-sm text-acc" dir="ltr">{prog?.score ?? 0} {t("common.points")}</span>
         </div>
-        <ProgressBar value={done} max={5} tone="bg-gold" />
+        <ProgressBar value={done} max={TOTAL_DAILY} tone="bg-gold" />
       </Card>
 
       {/* celebration */}
-      {done >= 5 && (
+      {done >= TOTAL_DAILY && (
         <Card className="anim-pop border-good/40 bg-good/10 p-5 text-center">
           <span className="mx-auto grid size-14 place-items-center rounded-full bg-good/20 text-good">
             <Icon name="trophy" size={28} />

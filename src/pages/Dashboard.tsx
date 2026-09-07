@@ -28,6 +28,7 @@ export default function Dashboard() {
   const today = todayKey();
   const prog = daily[today];
   const done = prog?.done.length ?? 0;
+  const TOTAL_DAILY = 7;
   const { current: streak } = streakInfo(daily);
   const stats = useMemo(() => totalStats(scores), [scores]);
   const week = useMemo(() => last7Counts(scores), [scores]);
@@ -64,7 +65,7 @@ export default function Dashboard() {
           <Card className="anim-fadeUp relative overflow-hidden p-5 sm:p-6" hover>
             <div className="bg-grid pointer-events-none absolute inset-0 opacity-30" aria-hidden="true" />
             <div className="relative flex flex-wrap items-center gap-4">
-              <span className={`grid size-14 shrink-0 place-items-center rounded-xl ${done >= 5 ? "bg-good/15 text-good" : "bg-gold/15 text-gold"} ${done < 5 ? "anim-glow" : ""}`}>
+              <span className={`grid size-14 shrink-0 place-items-center rounded-xl ${done >= TOTAL_DAILY ? "bg-good/15 text-good" : "bg-gold/15 text-gold"} ${done < TOTAL_DAILY ? "anim-glow" : ""}`}>
                 <Icon name="flame" size={28} />
               </span>
               <div className="min-w-0 flex-1">
@@ -76,7 +77,7 @@ export default function Dashboard() {
                     </span>
                   )}
                 </div>
-                {done >= 5 ? (
+                {done >= TOTAL_DAILY ? (
                   <p className="mt-1 text-sm font-bold text-good">{t("dash.dailyDone")}</p>
                 ) : (
                   <div className="mt-2 max-w-xs">

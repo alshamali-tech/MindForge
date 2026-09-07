@@ -183,7 +183,7 @@ function persistMeta(get: () => MetaState) {
 
 export function streakInfo(daily: Record<string, DayProgress>) {
   const full = Object.entries(daily)
-    .filter(([, v]) => v.done.length >= 5)
+    .filter(([, v]) => v.done.length >= 7)
     .map(([k]) => k);
   return computeStreak(full);
 }

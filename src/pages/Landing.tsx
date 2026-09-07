@@ -180,9 +180,9 @@ export default function Landing() {
         <div className="border-y border-line bg-surface/70">
           <div className="mx-auto grid w-full max-w-6xl grid-cols-2 divide-x divide-line px-4 sm:grid-cols-4 sm:px-6" dir="ltr">
             {[
-              { n: "15", label: t("land.statGames") },
-              { n: "5", label: t("land.statCats") },
-              { n: "5", label: t("land.statDaily") },
+              { n: "26", label: t("land.statGames") },
+              { n: "7", label: t("land.statCats") },
+              { n: "7", label: t("land.statDaily") },
               { n: "$0", label: t("land.statFree") },
             ].map((s, i) => (
               <div key={i} className="px-3 py-5 text-center sm:py-6">
@@ -267,6 +267,23 @@ export default function Landing() {
             </a>
           </Reveal>
         </div>
+      </section>
+
+      {/* ============ RESEARCH ============ */}
+      <section className="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6">
+        <Reveal>
+          <div className="rounded-2xl border border-sky-200 bg-sky-50 p-6 dark:border-sky-900 dark:bg-sky-950/30">
+            <div className="flex items-start gap-4">
+              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200">
+                <Icon name="shield" size={24} />
+              </span>
+              <div>
+                <h2 className="text-lg font-black tracking-tight">{t("research.badge")}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-mut">{t("research.disclaimer")}</p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
       </section>
 
       {/* ============ COMPARISON ============ */}

@@ -18,7 +18,9 @@
   --color-cfocus: var(--c-focus);
   --color-cspeed: var(--c-speed);
   --color-clogic: var(--c-logic);
-  --color-clanguage: var(--c-language);
+  --color-cwords: var(--c-words);
+  --color-cspatial: var(--c-spatial);
+  --color-cmath: var(--c-math);
 }
 
 @theme {
@@ -42,7 +44,9 @@
   --c-focus: #e11d48;
   --c-speed: #d97706;
   --c-logic: #059669;
-  --c-language: #0284c7;
+  --c-words: #0284c7;
+  --c-spatial: #9333ea;
+  --c-math: #db2777;
   --glow1: rgba(79, 70, 229, 0.09);
   --glow2: rgba(217, 119, 6, 0.07);
   color-scheme: light;
@@ -64,7 +68,9 @@
   --c-focus: #fb7185;
   --c-speed: #fbbf24;
   --c-logic: #34d399;
-  --c-language: #38bdf8;
+  --c-words: #38bdf8;
+  --c-spatial: #c084fc;
+  --c-math: #f472b6;
   --glow1: rgba(124, 134, 248, 0.08);
   --glow2: rgba(251, 191, 36, 0.05);
   color-scheme: dark;
