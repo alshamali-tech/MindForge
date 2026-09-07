@@ -125,7 +125,7 @@ export function Crossword({ paused, lang, t, fx, onScore, onFinish }: GameProps)
     }
   });
 
-  const cellSize = "size-10 sm:size-12";
+  const cellSize = "size-8 sm:size-10 md:size-12";
 
   return (
     <div className="space-y-4">

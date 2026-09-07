@@ -343,7 +343,7 @@ export function NumberGrid({ paused, t, fx, onScore, onFinish }: GameProps) {
               <button
                 key={`${r}-${c}`}
                 onClick={() => setSelected({ r, c })}
-                className={`grid size-16 place-items-center rounded-lg border-2 text-2xl font-black transition-all sm:size-20 ${
+                className={`grid size-14 sm:size-16 md:size-20 place-items-center rounded-lg border-2 text-xl sm:text-2xl font-black transition-all ${
                   selected?.r === r && selected?.c === c ? "border-acc bg-acc/10 text-acc" : "border-line bg-surface hover:border-acc/50"
                 }`}
               >

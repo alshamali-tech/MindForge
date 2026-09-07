@@ -164,7 +164,7 @@ export function Sudoku({ paused, t, fx, onScore, onFinish }: GameProps) {
                 <button
                   key={`${r}-${c}`}
                   onClick={() => setPos({ r, c })}
-                  className={`relative grid size-12 place-items-center rounded border-2 text-xl font-black transition-all sm:size-14 ${
+                  className={`relative grid size-10 sm:size-12 md:size-14 place-items-center rounded border-2 text-lg sm:text-xl font-black transition-all ${
                     isPos ? "border-acc bg-acc/10" : hasConflict ? "border-bad bg-bad/10" : "border-line bg-surface hover:border-acc/50"
                   } ${isOrig ? "text-ink" : "text-acc"}`}
                 >

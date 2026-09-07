@@ -187,7 +187,7 @@ export function MazeNavigator({ paused, t, fx, onScore, onFinish }: GameProps) {
                     if (Math.abs(pos.r - r) + Math.abs(pos.c - c) === 1) move(r - pos.r, c - pos.c);
                   }}
                   disabled={paused}
-                  className={`grid size-8 place-items-center rounded text-xs font-black transition-all sm:size-10 ${
+                  className={`grid size-7 sm:size-8 md:size-10 place-items-center rounded text-xs font-black transition-all ${
                     wall ? "bg-raise" : isGoal ? "bg-bad text-white" : isStart ? "bg-good text-white" : isPos ? "bg-acc text-white scale-110" : "bg-surface hover:bg-raise"
                   }`}
                   aria-label={wall ? "wall" : isGoal ? "goal" : isStart ? "start" : "path"}

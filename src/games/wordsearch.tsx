@@ -155,7 +155,7 @@ export function WordSearch({ paused, t, fx, onScore, onFinish }: GameProps) {
                 onMouseUp={() => {
                   if (selecting) checkWord();
                 }}
-                className={`grid size-7 place-items-center rounded text-xs font-black transition-all sm:size-8 sm:text-sm ${
+                className={`grid size-6 sm:size-7 md:size-8 place-items-center rounded text-[10px] sm:text-xs md:text-sm font-black transition-all ${
                   isSelected(r, c) ? "bg-acc text-white scale-110" : isFound(r, c) ? "bg-good/20 text-good" : "bg-raise hover:bg-acc/10"
                 }`}
               >
