@@ -350,7 +350,7 @@ export default function Landing() {
                 <span className="flex items-center gap-1.5 text-xs font-black text-gold">
                   <Icon name="flame" size={14} /> {t("daily.streakLabel")}: <span className="font-mono" dir="ltr">7</span>
                 </span>
-                <span className="text-[10px] font-black uppercase tracking-widest text-mut">2/5</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-mut">2/7</span>
               </div>
             </div>
           </Reveal>

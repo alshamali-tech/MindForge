@@ -177,6 +177,12 @@ const P: Record<string, ReactNode> = {
       <path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8 19 13M17.8 6.2 19 5M3 21l9-9" />
     </>
   ),
+  mail: (
+    <>
+      <rect x="2" y="4" width="20" height="16" rx="2" />
+      <path d="M22 6 12 13 2 6" />
+    </>
+  ),
   arrowUp: <path d="M12 19V5m-6 6 6-6 6 6" />,
   arrowDown: <path d="M12 5v14m6-6-6 6-6-6" />,
 };

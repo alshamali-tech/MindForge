@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useT } from "../i18n";
 import { useHistory, useSettings, useUI, totalStats } from "../store";
 import { sfx } from "../core/sfx";
-import { APP_VERSION, EXPORT_VERSION, KOFI_URL } from "../constants";
+import { APP_VERSION, CONTACT_EMAIL, EXPORT_VERSION, KOFI_URL } from "../constants";
 import { Icon } from "../components/icons";
 import { Button, Card, ConfirmDialog } from "../components/ui";
 
@@ -240,6 +240,17 @@ export default function SettingsPage() {
           <Link to="/privacy" className="font-bold text-acc hover:underline">{t("nav.privacy")}</Link>
           <span aria-hidden="true">·</span>
           <Link to="/terms" className="font-bold text-acc hover:underline">{t("nav.terms")}</Link>
+        </div>
+      </Card>
+
+      {/* contact */}
+      <Card className="anim-fadeUp p-5">
+        <h2 className="text-sm font-black uppercase tracking-[0.18em] text-mut">{t("foot.contact")}</h2>
+        <p className="mt-2 text-sm leading-relaxed text-ink/85">{t("set.contactBody")}</p>
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <a href={`mailto:${CONTACT_EMAIL}`} className="inline-flex items-center gap-2 rounded-lg bg-raise px-4 py-2 text-sm font-bold text-acc hover:bg-acc/10">
+            <Icon name="mail" size={16} /> {CONTACT_EMAIL}
+          </a>
         </div>
       </Card>
 

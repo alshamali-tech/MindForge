@@ -81,7 +81,7 @@ export default function Dashboard() {
                   <p className="mt-1 text-sm font-bold text-good">{t("dash.dailyDone")}</p>
                 ) : (
                   <div className="mt-2 max-w-xs">
-                    <ProgressBar value={done} max={5} tone="bg-gold" />
+                    <ProgressBar value={done} max={7} tone="bg-gold" />
                     <div className="mt-1 text-xs font-bold text-mut">
                       {t("dash.dailyProgress", { d: done })} {prog && prog.score > 0 && <span className="tabular font-mono">· {prog.score} {t("common.points")}</span>}
                     </div>

@@ -4,7 +4,7 @@ import { CATEGORIES } from "../core/games";
 import { todayKey } from "../core/engine";
 import { useT } from "../i18n";
 import { useHistory, useMeta, useSettings, streakInfo } from "../store";
-import { APP_VERSION, KOFI_URL } from "../constants";
+import { APP_VERSION, CONTACT_EMAIL, KOFI_URL } from "../constants";
 import { Icon } from "./icons";
 import { Button } from "./ui";
 
@@ -304,6 +304,12 @@ export function PublicLayout() {
             <a href={KOFI_URL} target="_blank" rel="noopener noreferrer" className="btn-press inline-flex items-center gap-2 rounded-lg bg-gold px-4 py-2 text-sm font-black text-white">
               <Icon name="coffee" size={15} /> {t("land.donBtn")}
             </a>
+            <div className="mt-4">
+              <p className="text-xs font-bold text-ink/80">{t("foot.contact")}</p>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="mt-1 flex items-center gap-1.5 text-xs font-semibold text-acc hover:underline">
+                <Icon name="mail" size={13} /> {CONTACT_EMAIL}
+              </a>
+            </div>
             <p className="mt-3 flex items-center gap-1.5 text-xs text-mut">
               <Icon name="shield" size={13} /> {t("land.priv1")}
             </p>
