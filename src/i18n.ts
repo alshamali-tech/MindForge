@@ -4,7 +4,7 @@ type Dict = Record<string, string>;
 
 const en: Dict = {
   "app.name": "MindForge",
-  "app.tagline": "All the brain games. None of the bullshit.",
+  "app.tagline": "All the brain games. None of the fluff.",
 
   /* nav */
   "nav.dashboard": "Dashboard",
@@ -52,7 +52,7 @@ const en: Dict = {
   /* landing */
   "land.badge": "100% free · no account · works offline",
   "land.h1a": "All the brain games.",
-  "land.h1b": "None of the bullshit.",
+  "land.h1b": "None of the fluff.",
   "land.sub": "26 hand-crafted games across memory, words, speed, focus, logic, spatial and math. A daily workout that takes seven minutes. No subscription, no ads, no tracking — it all lives in your browser.",
   "land.ctaPlay": "Play free — instant",
   "land.ctaMore": "See what's inside",
@@ -528,7 +528,7 @@ const en: Dict = {
 
 const ar: Dict = {
   "app.name": "MindForge",
-  "app.tagline": "كل ألعاب الدماغ. بدون أي هراء.",
+  "app.tagline": "كل ألعاب الدماغ. بدون أي تعقيد.",
 
   "nav.dashboard": "لوحة التحكم",
   "nav.daily": "التمرين اليومي",
@@ -573,7 +573,7 @@ const ar: Dict = {
 
   "land.badge": "مجاني 100% · بلا حساب · يعمل دون اتصال",
   "land.h1a": "كل ألعاب الدماغ.",
-  "land.h1b": "بدون أي هراء.",
+  "land.h1b": "بدون أي تعقيد.",
   "land.sub": "26 لعبة مصنوعة بحرفية تغطي الذاكرة والكلمات والسرعة والتركيز والمنطق والمكاني والحساب. تمرين يومي لا يتجاوز سبع دقائق. بلا اشتراك، بلا إعلانات، بلا تتبّع — وكل شيء يعمل داخل متصفحك.",
   "land.ctaPlay": "العب مجانًا — فورًا",
   "land.ctaMore": "اكتشف ما بالداخل",
