@@ -62,12 +62,10 @@ export const GAMES: GameMeta[] = [
   g("rapid-sort", "speed", "est.timed30"),
   g("quick-match", "speed", "est.timed30"),
   g("reaction-grid", "speed", "est.short"),
-  g("speed-find", "speed", "est.timed30"),
   // Focus
   g("stroop-challenge", "focus", "est.timed30"),
   g("target-tap", "focus", "est.timed30"),
   g("visual-scan", "focus", "est.timed45"),
-  g("distraction-filter", "focus", "est.timed30"),
   // Logic
   g("pattern-complete", "logic", "est.short"),
   g("rule-switch", "logic", "est.timed45"),
@@ -80,7 +78,6 @@ export const GAMES: GameMeta[] = [
   // Math
   g("mental-math", "math", "est.timed60"),
   g("number-sequence", "math", "est.short"),
-  g("number-grid", "math", "est.timed45"),
 ];
 
 export const gameById = (id: string): GameMeta | undefined => GAMES.find((x) => x.id === id);

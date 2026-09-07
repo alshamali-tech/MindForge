@@ -14,7 +14,7 @@ import { QuickMatch, RapidSort, ReactionGrid } from "../games/speed";
 import { OddOneOut, PatternComplete, RuleSwitch } from "../games/logic";
 import { MentalMath, NumberSequence, WordScramble } from "../games/language";
 import { NBack } from "../games/nback";
-import { DistractionFilter, NumberGrid, SpeedFind, VocabMatch } from "../games/extras";
+import { VocabMatch } from "../games/extras";
 import { MentalRotation, MazeNavigator, MirrorImage } from "../games/spatial";
 import { Crossword } from "../games/crossword";
 import { Sudoku } from "../games/sudoku";
@@ -42,13 +42,10 @@ const COMPONENTS: Record<string, ComponentType<GameProps>> = {
   "crossword": Crossword,
   "word-search": WordSearch,
   "vocab-match": VocabMatch,
-  "speed-find": SpeedFind,
-  "distraction-filter": DistractionFilter,
   "sudoku": Sudoku,
   "mental-rotation": MentalRotation,
   "maze-navigator": MazeNavigator,
   "mirror-image": MirrorImage,
-  "number-grid": NumberGrid,
 };
 
 type Phase = "intro" | "countdown" | "playing" | "results";

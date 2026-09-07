@@ -180,7 +180,7 @@ export default function Landing() {
         <div className="border-y border-line bg-surface/70">
           <div className="mx-auto grid w-full max-w-6xl grid-cols-2 divide-x divide-line px-4 sm:grid-cols-4 sm:px-6" dir="ltr">
             {[
-              { n: "26", label: t("land.statGames") },
+              { n: "23", label: t("land.statGames") },
               { n: "7", label: t("land.statCats") },
               { n: "7", label: t("land.statDaily") },
               { n: "$0", label: t("land.statFree") },
