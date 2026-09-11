@@ -54,7 +54,7 @@ export const GAMES: GameMeta[] = [
   g("n-back", "memory", "est.timed60"),
   g("object-position", "memory", "est.short"),
   // Words
-  g("crossword", "words", "est.long"),
+  g("word-builder", "words", "est.timed90"),
   g("word-scramble", "words", "est.timed90"),
   g("word-search", "words", "est.timed120"),
   g("vocab-match", "words", "est.timed60"),
