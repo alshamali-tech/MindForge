@@ -230,15 +230,7 @@ const en: Dict = {
   "game.n-back.nomatch": "No match",
   "game.n-back.level": "Level {n}-back",
 
-  "game.word-builder.name": "Word Builder",
-  "game.word-builder.desc": "Make words from the letters. Find as many as you can!",
-  "game.word-builder.how": "You have some letters. Make words using 3 or more letters. Each word must be at least 3 letters long. Find as many words as you can before time runs out!",
-  "game.word-builder.keys": "Type letters · Enter to submit · Backspace to delete",
-  "game.word-builder.found": "Found {n} words",
-  "game.word-builder.newWord": "New word!",
-  "game.word-builder.alreadyFound": "Already found!",
-  "game.word-builder.tooShort": "Too short! Need 3+ letters",
-  "game.word-builder.notAWord": "Not a valid word",
+
 
   "game.word-search.name": "Word Search",
   "game.word-search.desc": "Find hidden words in the letter grid.",
@@ -298,7 +290,7 @@ const en: Dict = {
   "research.sequence-recall": "Short-term memory span training; cognitive apps may improve cognition.",
   "research.n-back": "Meta-analyses suggest n-back training improves working memory and may transfer to digit-span tasks.",
   "research.object-position": "Spatial working memory; associated with hippocampal function.",
-  "research.word-builder": "Word formation exercises engage language processing and creative thinking, supporting cognitive flexibility.",
+
   "research.word-scramble": "Anagram solving engages cognitive flexibility and neuroplasticity.",
   "research.word-search": "Word puzzle frequency is associated with cognitive function in older adults.",
   "research.vocab-match": "Vocabulary knowledge is a reliable proxy of cognitive reserve.",
@@ -748,15 +740,7 @@ const ar: Dict = {
   "game.n-back.nomatch": "غير متطابق",
   "game.n-back.level": "المستوى {n}-باك",
 
-  "game.word-builder.name": "صانع الكلمات",
-  "game.word-builder.desc": "اصنع كلمات من الحروف. اعثر على أكبر عدد ممكن!",
-  "game.word-builder.how": "لديك بعض الحروف. اصنع كلمات باستخدام 3 حروف أو أكثر. يجب أن تكون كل كلمة 3 حروف على الأقل. اعثر على أكبر عدد ممكن من الكلمات قبل انتهاء الوقت!",
-  "game.word-builder.keys": "اكتب الحروف · إدخال للإرسال · مسافة للخلف للحذف",
-  "game.word-builder.found": "وجدت {n} كلمات",
-  "game.word-builder.newWord": "كلمة جديدة!",
-  "game.word-builder.alreadyFound": "وجدتها مسبقًا!",
-  "game.word-builder.tooShort": "قصيرة جدًا! تحتاج 3+ حروف",
-  "game.word-builder.notAWord": "ليست كلمة صالحة",
+
 
   "game.word-search.name": "بحث الكلمات",
   "game.word-search.desc": "ابحث عن الكلمات المخفية في شبكة الحروف.",
@@ -816,7 +800,7 @@ const ar: Dict = {
   "research.sequence-recall": "تدريب مدى الذاكرة قصيرة الأمد؛ تطبيقات الذهن قد تحسّن الإدراك.",
   "research.n-back": "تحليلات تلوية تشير إلى أن تدريب n-back يحسّن الذاكرة العاملة وقد يمتد تأثيره إلى مدى الأرقام.",
   "research.object-position": "الذاكرة العاملة المكانية؛ مرتبطة بوظيفة الحُصين.",
-  "research.word-builder": "تمارين تكوين الكلمات تنشط معالجة اللغة والتفكير الإبداعي، وتدعم المرونة الإدراكية.",
+
   "research.word-scramble": "حلّ الأحجيات اللفظية ينشّط المرونة الإدراكية واللدونة العصبية.",
   "research.word-search": "تكرار ألغاز الكلمات مرتبط بوظيفة إدراكية أفضل لدى كبار السن.",
   "research.vocab-match": "المعرفة المفرداتية وكيل موثوق للاحتياطي الإدراكي.",

@@ -16,7 +16,7 @@ import { MentalMath, NumberSequence, WordScramble } from "../games/language";
 import { NBack } from "../games/nback";
 import { VocabMatch } from "../games/extras";
 import { MentalRotation, MazeNavigator, MirrorImage } from "../games/spatial";
-import { WordBuilder } from "../games/word-builder";
+
 import { Sudoku } from "../games/sudoku";
 import { WordSearch } from "../games/wordsearch";
 import { Icon } from "./icons";
@@ -39,7 +39,7 @@ const COMPONENTS: Record<string, ComponentType<GameProps>> = {
   "mental-math": MentalMath,
   "number-sequence": NumberSequence,
   "n-back": NBack,
-  "word-builder": WordBuilder,
+
   "word-search": WordSearch,
   "vocab-match": VocabMatch,
   "sudoku": Sudoku,
