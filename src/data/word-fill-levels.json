@@ -1,0 +1,109 @@
+{
+  "levels": [
+    {
+      "id": "easy-01",
+      "difficulty": "easy",
+      "text": "HELLO MY FRIEND",
+      "maskMode": "vowels",
+      "hint": "A friendly greeting 👋"
+    },
+    {
+      "id": "easy-02",
+      "difficulty": "easy",
+      "text": "THE CAT IS BLACK",
+      "maskMode": "vowels",
+      "hint": "Describing a pet 🐈‍⬛"
+    },
+    {
+      "id": "easy-03",
+      "difficulty": "easy",
+      "text": "I LOVE MY FAMILY",
+      "maskMode": "vowels",
+      "hint": "People who care about you 👨‍👩‍👧‍👦"
+    },
+    {
+      "id": "easy-04",
+      "difficulty": "easy",
+      "text": "THE SUN IS BRIGHT",
+      "maskMode": "vowels",
+      "hint": "Looking at the sky ☀️"
+    },
+    {
+      "id": "easy-05",
+      "difficulty": "easy",
+      "text": "WE EAT FOOD DAILY",
+      "maskMode": "vowels",
+      "hint": "Something we need 🍽️"
+    },
+    {
+      "id": "med-01",
+      "difficulty": "medium",
+      "text": "I DRINK WATER EVERY DAY",
+      "maskMode": "random40",
+      "hint": "A healthy habit 💧"
+    },
+    {
+      "id": "med-02",
+      "difficulty": "medium",
+      "text": "THE BIRD SINGS IN THE TREE",
+      "maskMode": "random40",
+      "hint": "Nature's music 🐦"
+    },
+    {
+      "id": "med-03",
+      "difficulty": "medium",
+      "text": "SHE READS BOOKS AT NIGHT",
+      "maskMode": "random40",
+      "hint": "A quiet evening activity 📚"
+    },
+    {
+      "id": "med-04",
+      "difficulty": "medium",
+      "text": "THE FLOWERS BLOOM IN SPRING",
+      "maskMode": "random40",
+      "hint": "When gardens wake up 🌸"
+    },
+    {
+      "id": "med-05",
+      "difficulty": "medium",
+      "text": "WE PLAY GAMES WITH FRIENDS",
+      "maskMode": "random40",
+      "hint": "Fun times together 🎮"
+    },
+    {
+      "id": "hard-01",
+      "difficulty": "hard",
+      "text": "MY GRANDMOTHER TELLS GREAT STORIES",
+      "maskMode": "keepFirstLetter",
+      "hint": "Family time 📖"
+    },
+    {
+      "id": "hard-02",
+      "difficulty": "hard",
+      "text": "THE TEACHER HELPS US LEARN NEW THINGS",
+      "maskMode": "keepFirstLetter",
+      "hint": "At school 🏫"
+    },
+    {
+      "id": "hard-03",
+      "difficulty": "hard",
+      "text": "FRIENDS SHARE AND CARE FOR EACH OTHER",
+      "maskMode": "keepFirstLetter",
+      "hint": "What friends do 🤝"
+    },
+    {
+      "id": "hard-04",
+      "difficulty": "hard",
+      "text": "THE DOCTOR CHECKS OUR HEALTH EVERY YEAR",
+      "maskMode": "keepFirstLetter",
+      "hint": "Staying healthy 🩺"
+    },
+    {
+      "id": "hard-05",
+      "difficulty": "hard",
+      "text": "MUSIC MAKES US HAPPY AND BRINGS JOY",
+      "maskMode": "keepFirstLetter",
+      "hint": "Something we love to hear 🎵"
+    }
+  ]
+}

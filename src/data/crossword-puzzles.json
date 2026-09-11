@@ -1,0 +1,121 @@
+{
+  "puzzles": [
+    {
+      "id": "cw-easy-01",
+      "difficulty": "easy",
+      "rows": 5,
+      "cols": 5,
+      "words": [
+        { "answer": "SUN", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "It shines in the day ☀️" },
+        { "answer": "STAR", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "It twinkles at night ✨" },
+        { "answer": "APPLE", "row": 2, "col": 0, "dir": "across", "num": 3, "clue": "A fruit 🍎" }
+      ]
+    },
+    {
+      "id": "cw-easy-02",
+      "difficulty": "easy",
+      "rows": 5,
+      "cols": 5,
+      "words": [
+        { "answer": "CAT", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Says meow 🐱" },
+        { "answer": "CUP", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "You drink from it ☕" },
+        { "answer": "DOG", "row": 2, "col": 0, "dir": "across", "num": 3, "clue": "Says woof 🐶" }
+      ]
+    },
+    {
+      "id": "cw-easy-03",
+      "difficulty": "easy",
+      "rows": 5,
+      "cols": 5,
+      "words": [
+        { "answer": "RED", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Color of an apple 🍎" },
+        { "answer": "RUN", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "Move fast with your legs 🏃" },
+        { "answer": "BED", "row": 2, "col": 0, "dir": "across", "num": 3, "clue": "You sleep in it 🛏️" }
+      ]
+    },
+    {
+      "id": "cw-easy-04",
+      "difficulty": "easy",
+      "rows": 5,
+      "cols": 5,
+      "words": [
+        { "answer": "HAT", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "You wear it on your head 🎩" },
+        { "answer": "HEN", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "A mother chicken 🐔" },
+        { "answer": "BAT", "row": 2, "col": 0, "dir": "across", "num": 3, "clue": "You hit a ball with it 🏏" }
+      ]
+    },
+    {
+      "id": "cw-easy-05",
+      "difficulty": "easy",
+      "rows": 5,
+      "cols": 5,
+      "words": [
+        { "answer": "PIG", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "A pink farm animal 🐷" },
+        { "answer": "PEN", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "You write with it 🖊️" },
+        { "answer": "BIG", "row": 2, "col": 0, "dir": "across", "num": 3, "clue": "Not small 🐘" }
+      ]
+    },
+    {
+      "id": "cw-med-01",
+      "difficulty": "medium",
+      "rows": 6,
+      "cols": 6,
+      "words": [
+        { "answer": "HOUSE", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Where you live 🏠" },
+        { "answer": "HORSE", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "You can ride it 🐴" },
+        { "answer": "WATER", "row": 2, "col": 1, "dir": "across", "num": 3, "clue": "You drink this 💧" },
+        { "answer": "EARTH", "row": 0, "col": 4, "dir": "down", "num": 4, "clue": "Our planet 🌍" }
+      ]
+    },
+    {
+      "id": "cw-med-02",
+      "difficulty": "medium",
+      "rows": 6,
+      "cols": 6,
+      "words": [
+        { "answer": "TRAIN", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Runs on tracks 🚂" },
+        { "answer": "TIGER", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "A striped cat 🐯" },
+        { "answer": "RIVER", "row": 2, "col": 1, "dir": "across", "num": 3, "clue": "Water flows in it 🌊" },
+        { "answer": "NIGHT", "row": 0, "col": 4, "dir": "down", "num": 4, "clue": "When it's dark 🌙" }
+      ]
+    },
+    {
+      "id": "cw-med-03",
+      "difficulty": "medium",
+      "rows": 6,
+      "cols": 6,
+      "words": [
+        { "answer": "BREAD", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Used for sandwiches 🍞" },
+        { "answer": "BEACH", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "Sand by the ocean 🏖️" },
+        { "answer": "DANCE", "row": 2, "col": 1, "dir": "across", "num": 3, "clue": "Move to music 💃" },
+        { "answer": "CHAIR", "row": 0, "col": 4, "dir": "down", "num": 4, "clue": "You sit on it 🪑" }
+      ]
+    },
+    {
+      "id": "cw-hard-01",
+      "difficulty": "hard",
+      "rows": 7,
+      "cols": 7,
+      "words": [
+        { "answer": "GARDEN", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Where flowers grow 🌻" },
+        { "answer": "GUITAR", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "A string instrument 🎸" },
+        { "answer": "WINDOW", "row": 2, "col": 1, "dir": "across", "num": 3, "clue": "You look through it 🪟" },
+        { "answer": "RABBIT", "row": 0, "col": 5, "dir": "down", "num": 4, "clue": "Has long ears 🐰" },
+        { "answer": "ORANGE", "row": 4, "col": 0, "dir": "across", "num": 5, "clue": "A citrus fruit 🍊" }
+      ]
+    },
+    {
+      "id": "cw-hard-02",
+      "difficulty": "hard",
+      "rows": 7,
+      "cols": 7,
+      "words": [
+        { "answer": "FOREST", "row": 0, "col": 0, "dir": "across", "num": 1, "clue": "Many trees together 🌲" },
+        { "answer": "FINGER", "row": 0, "col": 0, "dir": "down", "num": 2, "clue": "You have ten of these 🖐️" },
+        { "answer": "ROCKET", "row": 2, "col": 1, "dir": "across", "num": 3, "clue": "Flies to space 🚀" },
+        { "answer": "STUDENT", "row": 0, "col": 5, "dir": "down", "num": 4, "clue": "Goes to school 📚" },
+        { "answer": "TEACHER", "row": 4, "col": 0, "dir": "across", "num": 5, "clue": "Helps you learn 👩‍🏫" }
+      ]
+    }
+  ]
+}

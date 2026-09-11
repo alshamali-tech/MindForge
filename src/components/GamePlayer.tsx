@@ -16,7 +16,8 @@ import { MentalMath, NumberSequence } from "../games/language";
 import { DistractionFilter, NumberGrid, SpeedFind, VocabMatch } from "../games/extras";
 
 import { Sudoku } from "../games/sudoku";
-import { WordSearch } from "../games/wordsearch";
+import { WordFill } from "../games/word-fill";
+import { MiniCrossword } from "../games/mini-crossword";
 import { Icon } from "./icons";
 import { Badge, Button, Card, LinkButton, Modal } from "./ui";
 
@@ -35,7 +36,8 @@ const COMPONENTS: Record<string, ComponentType<GameProps>> = {
   "rule-switch": RuleSwitch,
   "mental-math": MentalMath,
   "number-sequence": NumberSequence,
-  "word-search": WordSearch,
+  "word-fill": WordFill,
+  "mini-crossword": MiniCrossword,
   "vocab-match": VocabMatch,
   "sudoku": Sudoku,
   "distraction-filter": DistractionFilter,

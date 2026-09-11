@@ -52,7 +52,8 @@ export const GAMES: GameMeta[] = [
   g("sequence-recall", "memory", "est.variable"),
   g("object-position", "memory", "est.short"),
   // Words
-  g("word-search", "words", "est.timed120"),
+  g("word-fill", "words", "est.relaxed"),
+  g("mini-crossword", "words", "est.relaxed"),
   g("vocab-match", "words", "est.timed60"),
   // Speed
   g("rapid-sort", "speed", "est.timed30"),

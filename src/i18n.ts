@@ -150,6 +150,7 @@ const en: Dict = {
 
   /* durations */
   "est.short": "~1–2 min",
+  "est.relaxed": "No timer — take your time",
   "est.variable": "Until you miss",
   "est.timed30": "30 sec",
   "est.timed40": "40 sec",
@@ -232,11 +233,14 @@ const en: Dict = {
 
 
 
-  "game.word-search.name": "Word Search",
-  "game.word-search.desc": "Find hidden words in the letter grid.",
-  "game.word-search.how": "Click and drag across letters to select a word. Found words are highlighted. Find all words to win.",
-  "game.word-search.keys": "Arrow keys · Enter to start/confirm selection",
-  "game.word-search.found": "Found {n}/{total}",
+  "game.word-fill.name": "Word Fill",
+  "game.word-fill.desc": "Complete sentences by filling in missing letters.",
+  "game.word-fill.how": "Fill in the blank letters to complete each sentence. Use the on-screen keyboard or your physical keyboard. No timer — take your time! Hints are available if you need help.",
+  "game.word-fill.keys": "Type letters · Click cells · Tab to navigate",
+  "game.mini-crossword.name": "Mini Crossword",
+  "game.mini-crossword.desc": "Solve small crossword puzzles with helpful clues.",
+  "game.mini-crossword.how": "Fill in the grid by reading the clues. Click a cell and type the letter. Wrong letters shake gently — no penalty! Use hints if you get stuck.",
+  "game.mini-crossword.keys": "Type letters · Arrow keys to navigate · Click cells",
 
   "game.vocab-match.name": "Vocabulary Match",
   "game.vocab-match.desc": "Match each word to its definition.",
@@ -292,7 +296,8 @@ const en: Dict = {
   "research.object-position": "Spatial working memory; associated with hippocampal function.",
 
   "research.word-scramble": "Anagram solving engages cognitive flexibility and neuroplasticity.",
-  "research.word-search": "Word puzzle frequency is associated with cognitive function in older adults.",
+  "research.word-fill": "Fill-in-the-blank exercises engage language processing and working memory, supporting cognitive flexibility across age groups.",
+  "research.mini-crossword": "Crossword puzzles are associated with delayed memory onset and may help maintain cognitive function in aging adults.",
   "research.vocab-match": "Vocabulary knowledge is a reliable proxy of cognitive reserve.",
   "research.rapid-sort": "Speed-of-processing training is linked to lower long-term dementia incidence.",
   "research.quick-match": "Processing speed training is associated with cognitive health benefits.",
@@ -661,6 +666,7 @@ const ar: Dict = {
   "cat.math.blurb": "حساب ذهني، وسلاسل رقمية، وشبكات أرقام — حافظ على حدّة استدلالك الرقمي.",
 
   "est.short": "دقيقة–دقيقتان",
+  "est.relaxed": "بلا مؤقت — خذ وقتك",
   "est.variable": "حتى تخطئ",
   "est.timed30": "30 ثانية",
   "est.timed40": "40 ثانية",
@@ -742,11 +748,14 @@ const ar: Dict = {
 
 
 
-  "game.word-search.name": "بحث الكلمات",
-  "game.word-search.desc": "ابحث عن الكلمات المخفية في شبكة الحروف.",
-  "game.word-search.how": "انقر واسحب عبر الحروف لتحديد كلمة. تُبرز الكلمات التي وجدتها. اعثر على جميع الكلمات للفوز.",
-  "game.word-search.keys": "الأسهم · إدخال لبدء/تأكيد التحديد",
-  "game.word-search.found": "وجدت {n}/{total}",
+  "game.word-fill.name": "املأ الكلمات",
+  "game.word-fill.desc": "أكمل الجمل بملء الحروف الناقصة.",
+  "game.word-fill.how": "املأ الحروف الفارغة لإكمال كل جملة. استخدم لوحة المفاتيح على الشاشة أو لوحة المفاتيح الفعلية. لا يوجد مؤقت — خذ وقتك! التلميحات متاحة إذا احتجت إلى مساعدة.",
+  "game.word-fill.keys": "اكتب الحروف · انقر على الخلايا · تاب للتنقل",
+  "game.mini-crossword.name": "كلمات متقاطعة صغيرة",
+  "game.mini-crossword.desc": "حل ألغاز الكلمات المتقاطعة الصغيرة مع أدلة مفيدة.",
+  "game.mini-crossword.how": "املأ الشبكة بقراءة الأدلة. انقر على خانة واكتب الحرف. الحروف الخاطئة تهتز بلطف — لا عقوبة! استخدم التلميحات إذا علقت.",
+  "game.mini-crossword.keys": "اكتب الحروف · مفاتيح الأسهم للتنقل · انقر على الخلايا",
 
   "game.vocab-match.name": "مطابقة المفردات",
   "game.vocab-match.desc": "طابق كل كلمة بتعريفها.",
@@ -802,7 +811,8 @@ const ar: Dict = {
   "research.object-position": "الذاكرة العاملة المكانية؛ مرتبطة بوظيفة الحُصين.",
 
   "research.word-scramble": "حلّ الأحجيات اللفظية ينشّط المرونة الإدراكية واللدونة العصبية.",
-  "research.word-search": "تكرار ألغاز الكلمات مرتبط بوظيفة إدراكية أفضل لدى كبار السن.",
+  "research.word-fill": "تمارين ملء الفراغ تنشط معالجة اللغة والذاكرة العاملة، وتدعم المرونة الإدراكية عبر الفئات العمرية.",
+  "research.mini-crossword": "ألغاز الكلمات المتقاطعة مرتبطة بتأخير بداية فقدان الذاكرة وقد تساعد في الحفاظ على الوظيفة الإدراكية لدى البالغين المسنين.",
   "research.vocab-match": "المعرفة المفرداتية وكيل موثوق للاحتياطي الإدراكي.",
   "research.rapid-sort": "تدريب سرعة المعالجة مرتبط بانخفاض خطر الخرف على المدى الطويل.",
   "research.quick-match": "تدريب سرعة المعالجة مرتبط بفوائد صحية إدراكية.",
