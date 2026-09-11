@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "touch dist/.nojekyll",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
