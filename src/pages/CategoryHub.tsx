@@ -14,57 +14,63 @@ export default function CategoryHub() {
   const games = gamesByCat(cat.id);
 
   return (
-    <div className="mx-auto w-full max-w-3xl space-y-5">
+    <div className="mx-auto w-full max-w-3xl space-y-4 sm:space-y-5">
       {/* category chips */}
-      <div className="no-scrollbar flex gap-2 overflow-x-auto pb-1">
+      <div className="no-scrollbar flex gap-1.5 overflow-x-auto pb-1 sm:gap-2">
         {CATEGORIES.map((c) => (
           <Link
             key={c.id}
             to={`/app/category/${c.id}`}
-            className={`flex shrink-0 items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-black transition-colors ${
+            className={`flex shrink-0 items-center gap-1 rounded-lg border px-2.5 py-1.5 text-[11px] font-black transition-colors sm:gap-1.5 sm:px-3 sm:py-2 sm:text-xs ${
               c.id === cat.id ? `${c.softBg} ${c.text} border-transparent` : "border-line bg-surface text-mut hover:text-ink"
             }`}
           >
-            <Icon name={c.icon} size={14} /> {t(c.nameKey)}
+            <Icon name={c.icon} size={13} className="sm:hidden" />
+            <Icon name={c.icon} size={14} className="hidden sm:block" /> {t(c.nameKey)}
           </Link>
         ))}
       </div>
 
       {/* header */}
-      <div className="anim-fadeUp flex items-center gap-4">
-        <span className={`grid size-16 shrink-0 place-items-center rounded-2xl ${cat.softBg} ${cat.text}`}>
-          <Icon name={cat.icon} size={32} />
+      <div className="anim-fadeUp flex items-center gap-3 sm:gap-4">
+        <span className={`grid size-12 shrink-0 place-items-center rounded-xl sm:size-16 sm:rounded-2xl ${cat.softBg} ${cat.text}`}>
+          <Icon name={cat.icon} size={24} className="sm:hidden" />
+          <Icon name={cat.icon} size={32} className="hidden sm:block" />
         </span>
-        <div>
-          <h1 className="text-3xl font-black tracking-tight">{t(cat.nameKey)}</h1>
-          <p className="mt-0.5 text-sm text-mut">{t(cat.blurbKey)}</p>
+        <div className="min-w-0 flex-1">
+          <h1 className="text-2xl font-black tracking-tight sm:text-3xl">{t(cat.nameKey)}</h1>
+          <p className="mt-0.5 text-xs text-mut sm:text-sm">{t(cat.blurbKey)}</p>
         </div>
       </div>
 
       {/* games */}
-      <div className="space-y-3">
+      <div className="space-y-2 sm:space-y-3">
         {games.map((g, i) => {
           const best = bestScore(scores, g.id);
           return (
-            <Card key={g.id} hover className="anim-fadeUp p-5" >
-              <div className="flex flex-wrap items-center gap-4">
-                <span className={`grid size-12 shrink-0 place-items-center rounded-xl ${cat.softBg} ${cat.text}`}>
-                  <Icon name={cat.icon} size={24} />
+            <Card key={g.id} hover className="anim-fadeUp p-3 sm:p-5" >
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+                <span className={`grid size-10 shrink-0 place-items-center rounded-lg sm:size-12 sm:rounded-xl ${cat.softBg} ${cat.text}`}>
+                  <Icon name={cat.icon} size={20} className="sm:hidden" />
+                  <Icon name={cat.icon} size={24} className="hidden sm:block" />
                 </span>
                 <div className="min-w-0 flex-1" style={{ animationDelay: `${i * 60}ms` }}>
-                  <h2 className="text-lg font-black tracking-tight">{t(g.nameKey)}</h2>
-                  <p className="mt-0.5 text-sm text-mut">{t(g.descKey)}</p>
-                  <div className="mt-2 flex flex-wrap gap-2">
+                  <h2 className="text-base font-black tracking-tight sm:text-lg">{t(g.nameKey)}</h2>
+                  <p className="mt-0.5 text-xs text-mut sm:text-sm">{t(g.descKey)}</p>
+                  <div className="mt-1.5 flex flex-wrap gap-1.5 sm:mt-2 sm:gap-2">
                     <Badge tone="mut">
-                      <Icon name="clock" size={11} /> {t(g.est)}
+                      <Icon name="clock" size={10} className="sm:hidden" />
+                      <Icon name="clock" size={11} className="hidden sm:block" /> {t(g.est)}
                     </Badge>
                     <Badge tone={best !== null ? "gold" : "mut"}>
-                      <Icon name="trophy" size={11} /> {best !== null ? `${t("common.best")}: ${best}` : t("gameui.noScore")}
+                      <Icon name="trophy" size={10} className="sm:hidden" />
+                      <Icon name="trophy" size={11} className="hidden sm:block" /> {best !== null ? `${t("common.best")}: ${best}` : t("gameui.noScore")}
                     </Badge>
                   </div>
                 </div>
-                <Link to={`/app/play/${g.id}`} className="btn-press inline-flex min-h-[48px] shrink-0 items-center gap-2 rounded-lg bg-acc px-5 text-sm font-black text-white">
-                  <Icon name="play" size={15} /> {t("common.play")}
+                <Link to={`/app/play/${g.id}`} className="btn-press inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-lg bg-acc px-4 text-sm font-black text-white sm:min-h-[48px] sm:px-5">
+                  <Icon name="play" size={14} className="sm:hidden" />
+                  <Icon name="play" size={15} className="hidden sm:block" /> {t("common.play")}
                 </Link>
               </div>
             </Card>
@@ -72,7 +78,7 @@ export default function CategoryHub() {
         })}
       </div>
 
-      <p className="text-center text-xs text-mut">{lang === "ar" ? "كل لعبة تعمل دون اتصال وبلا حساب." : "Every game works offline, no account needed."}</p>
+      <p className="text-center text-[11px] text-mut sm:text-xs">{lang === "ar" ? "كل لعبة تعمل دون اتصال وبلا حساب." : "Every game works offline, no account needed."}</p>
     </div>
   );
 }

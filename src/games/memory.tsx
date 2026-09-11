@@ -85,7 +85,7 @@ export function CardMatch({ paused, t, fx, onScore, onFinish }: GameProps) {
         <HudChip icon="refresh" label={`${t("common.moves")}: ${moves}`} />
         <HudChip icon="check" label={`${solved}/8`} tone="text-good" />
       </div>
-      <div ref={gridRef} onKeyDown={onGridKey} className="grid grid-cols-4 gap-2 sm:gap-3" role="group" aria-label={t("game.card-match.name")}>
+      <div ref={gridRef} onKeyDown={onGridKey} className="grid grid-cols-4 gap-1.5 sm:gap-2 md:gap-3" role="group" aria-label={t("game.card-match.name")}>
         {cards.map((c, i) => (
           <button
             key={i}
@@ -93,7 +93,7 @@ export function CardMatch({ paused, t, fx, onScore, onFinish }: GameProps) {
             onClick={() => flip(i)}
             disabled={c.matched}
             aria-label={c.up ? c.sym : "?"}
-            className="flip-scene aspect-square w-full"
+            className="flip-scene aspect-square w-full min-w-0"
           >
             <span className={`flip-inner block ${c.up || c.matched ? "on" : ""}`}>
               <span className="flip-face bg-raise border border-line hover:border-acc transition-colors">
@@ -193,19 +193,19 @@ export function SequenceRecall({ paused, t, fx, onScore, onFinish }: GameProps) 
           tone={phase === "input" ? "text-acc" : "text-mut"}
         />
       </div>
-      <div className={`grid grid-cols-2 gap-3 sm:gap-4 ${wrong !== null ? "anim-shake" : ""}`} role="group" aria-label={t("game.sequence-recall.name")}>
+      <div className={`grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 ${wrong !== null ? "anim-shake" : ""}`} role="group" aria-label={t("game.sequence-recall.name")}>
         {SIMON_TILES.map((tile, i) => (
           <button
             key={i}
             onClick={() => press(i)}
             disabled={phase !== "input" || paused}
             aria-label={`${tile.sym} (${tile.key})`}
-            className={`relative flex aspect-square items-center justify-center rounded-xl text-4xl text-white/90 transition-all duration-150 sm:text-5xl ${tile.cls} ${
+            className={`relative flex aspect-square items-center justify-center rounded-lg text-3xl text-white/90 transition-all duration-150 sm:rounded-xl sm:text-4xl md:text-5xl ${tile.cls} ${
               lit === i ? "anim-tile scale-[1.04] ring-4 ring-white/60" : "opacity-80"
             } ${wrong === i ? "ring-4 ring-bad" : ""} ${phase === "input" ? "hover:scale-[1.03] active:scale-95 cursor-pointer" : "cursor-default"}`}
           >
             {tile.sym}
-            <span className="absolute bottom-2 end-2 rounded bg-black/25 px-1.5 font-mono text-xs font-bold">{tile.key}</span>
+            <span className="absolute bottom-1 end-1 rounded bg-black/25 px-1 font-mono text-[10px] font-bold sm:bottom-2 sm:end-2 sm:px-1.5 sm:text-xs">{tile.key}</span>
           </button>
         ))}
       </div>
@@ -324,7 +324,7 @@ export function ObjectPosition({ paused, t, fx, onScore, onFinish }: GameProps) 
           {t("game.object-position.where")} <span className="text-xl leading-none">{askSym}</span> ?
         </span>
       </div>
-      <div ref={gridRef} onKeyDown={onGridKey} className="grid grid-cols-4 gap-2 sm:gap-3" role="group" aria-label={t("game.object-position.name")}>
+      <div ref={gridRef} onKeyDown={onGridKey} className="grid grid-cols-4 gap-1.5 sm:gap-2 md:gap-3" role="group" aria-label={t("game.object-position.name")}>
         {Array.from({ length: 16 }, (_, i) => {
           const symHere = phase !== "ask" ? [...placements.entries()].find(([, c]) => c === i)?.[0] : undefined;
           const isAnswer = phase === "reveal" && placements.get(askSym) === i;
@@ -336,7 +336,7 @@ export function ObjectPosition({ paused, t, fx, onScore, onFinish }: GameProps) 
               onClick={() => phase === "ask" && !paused && resolve(i)}
               disabled={phase !== "ask"}
               aria-label={`cell ${i + 1}`}
-              className={`flex aspect-square items-center justify-center rounded-xl border text-2xl sm:text-3xl transition-all duration-200 ${
+              className={`flex aspect-square items-center justify-center rounded-lg border text-xl transition-all duration-200 sm:rounded-xl sm:text-2xl md:text-3xl ${
                 isAnswer
                   ? "border-good bg-good/15 text-good scale-[1.04]"
                   : isWrongPick

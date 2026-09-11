@@ -145,49 +145,50 @@ export default function Landing() {
       {/* ============ HERO ============ */}
       <section className="relative overflow-hidden">
         <div className="bg-grid pointer-events-none absolute inset-0 opacity-50 [mask-image:radial-gradient(70%_70%_at_50%_20%,black,transparent)]" aria-hidden="true" />
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:pt-16">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 pb-12 pt-8 sm:gap-10 sm:px-6 sm:pb-14 sm:pt-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:pt-16">
           <div className="anim-fadeUp">
-            <span className="inline-flex items-center gap-2 rounded-full border border-good/30 bg-good/10 px-3.5 py-1.5 text-xs font-black text-good">
+            <span className="inline-flex items-center gap-2 rounded-full border border-good/30 bg-good/10 px-3 py-1.5 text-[11px] font-black text-good sm:px-3.5 sm:text-xs">
               <Icon name="shield" size={14} /> {t("land.badge")}
             </span>
-            <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl">
+            <h1 className="mt-4 text-3xl font-black leading-[1.1] tracking-tight sm:mt-5 sm:text-5xl lg:text-6xl">
               {t("land.h1a")}
               <span className="mt-1 block text-acc">{t("land.h1b")}</span>
             </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-mut sm:text-lg">{t("land.sub")}</p>
-            <div className="mt-7 flex flex-wrap items-center gap-3">
-              <Link to="/app" className="btn-press inline-flex min-h-[52px] items-center gap-2 rounded-lg bg-acc px-7 text-base font-black text-white">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-mut sm:mt-5 sm:text-base lg:text-lg">{t("land.sub")}</p>
+            <div className="mt-6 flex flex-col gap-3 sm:mt-7 sm:flex-row sm:flex-wrap sm:items-center">
+              <Link to="/app" className="btn-press inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg bg-acc px-6 text-sm font-black text-white sm:min-h-[52px] sm:px-7 sm:text-base">
                 <Icon name="play" size={17} /> {t("land.ctaPlay")}
               </Link>
-              <Link to="/pricing" className="btn-soft-press inline-flex min-h-[52px] items-center gap-2 rounded-lg border border-line bg-surface px-6 text-base font-black text-ink hover:border-acc hover:text-acc">
+              <Link to="/pricing" className="btn-soft-press inline-flex min-h-[48px] items-center justify-center gap-2 rounded-lg border border-line bg-surface px-5 text-sm font-black text-ink hover:border-acc hover:text-acc sm:min-h-[52px] sm:px-6 sm:text-base">
                 {t("land.ctaMore")}
               </Link>
             </div>
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-1.5 sm:mt-6 sm:gap-2">
               {["land.chip1", "land.chip2", "land.chip3", "land.chip4"].map((k) => (
-                <span key={k} className="flex items-center gap-1.5 rounded-md bg-raise px-2.5 py-1.5 text-xs font-bold text-mut">
-                  <Icon name="check" size={13} className="text-good" /> {t(k)}
+                <span key={k} className="flex items-center gap-1 rounded-md bg-raise px-2 py-1 text-[11px] font-bold text-mut sm:gap-1.5 sm:px-2.5 sm:py-1.5 sm:text-xs">
+                  <Icon name="check" size={12} className="text-good sm:hidden" />
+                  <Icon name="check" size={13} className="hidden text-good sm:block" /> {t(k)}
                 </span>
               ))}
             </div>
           </div>
-          <Reveal delay={150} className="pb-6 pt-4">
+          <Reveal delay={150} className="pb-4 pt-2 sm:pb-6 sm:pt-4">
             <HeroDemo />
           </Reveal>
         </div>
 
         {/* stats strip */}
         <div className="border-y border-line bg-surface/70">
-          <div className="mx-auto grid w-full max-w-6xl grid-cols-2 divide-x divide-line px-4 sm:grid-cols-4 sm:px-6" dir="ltr">
+          <div className="mx-auto grid w-full max-w-6xl grid-cols-2 divide-x divide-line px-3 sm:grid-cols-4 sm:px-4 md:px-6" dir="ltr">
             {[
-              { n: "23", label: t("land.statGames") },
-              { n: "7", label: t("land.statCats") },
-              { n: "7", label: t("land.statDaily") },
+              { n: "20", label: t("land.statGames") },
+              { n: "6", label: t("land.statCats") },
+              { n: "6", label: t("land.statDaily") },
               { n: "$0", label: t("land.statFree") },
             ].map((s, i) => (
-              <div key={i} className="px-3 py-5 text-center sm:py-6">
-                <div className="tabular font-mono text-3xl font-black text-acc sm:text-4xl">{s.n}</div>
-                <div className="mt-1 text-[10px] font-black uppercase tracking-[0.16em] text-mut sm:text-[11px]">{s.label}</div>
+              <div key={i} className="px-2 py-4 text-center sm:px-3 sm:py-5 md:py-6">
+                <div className="tabular font-mono text-2xl font-black text-acc sm:text-3xl md:text-4xl">{s.n}</div>
+                <div className="mt-0.5 text-[9px] font-black uppercase tracking-[0.14em] text-mut sm:mt-1 sm:text-[10px] md:text-[11px]">{s.label}</div>
               </div>
             ))}
           </div>
@@ -350,7 +351,7 @@ export default function Landing() {
                 <span className="flex items-center gap-1.5 text-xs font-black text-gold">
                   <Icon name="flame" size={14} /> {t("daily.streakLabel")}: <span className="font-mono" dir="ltr">7</span>
                 </span>
-                <span className="text-[10px] font-black uppercase tracking-widest text-mut">2/7</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-mut">2/6</span>
               </div>
             </div>
           </Reveal>

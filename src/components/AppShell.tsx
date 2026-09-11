@@ -208,7 +208,7 @@ export function AppShell() {
           </div>
         )}
 
-        <main id="main" tabIndex={-1} className="mx-auto w-full max-w-6xl px-3 pb-28 pt-5 outline-none sm:px-6 md:pb-12">
+        <main id="main" tabIndex={-1} className="mx-auto w-full max-w-6xl px-3 pb-24 pt-5 outline-none sm:px-6 md:pb-8 md:pt-8">
           <Outlet />
         </main>
       </div>

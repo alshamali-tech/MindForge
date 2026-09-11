@@ -9,13 +9,11 @@ import { useHistory, useMeta, useSettings, useUI, bestScore } from "../store";
 import { DONATION_ENABLED, KOFI_URL } from "../constants";
 import type { GameProps, GameResult } from "../games/shared";
 import { CardMatch, ObjectPosition, SequenceRecall } from "../games/memory";
-import { Stroop, TargetTap, VisualScan } from "../games/focus";
+import { TargetTap, VisualScan } from "../games/focus";
 import { QuickMatch, RapidSort, ReactionGrid } from "../games/speed";
 import { OddOneOut, PatternComplete, RuleSwitch } from "../games/logic";
-import { MentalMath, NumberSequence, WordScramble } from "../games/language";
-import { NBack } from "../games/nback";
-import { VocabMatch } from "../games/extras";
-import { MentalRotation, MazeNavigator, MirrorImage } from "../games/spatial";
+import { MentalMath, NumberSequence } from "../games/language";
+import { DistractionFilter, NumberGrid, SpeedFind, VocabMatch } from "../games/extras";
 
 import { Sudoku } from "../games/sudoku";
 import { WordSearch } from "../games/wordsearch";
@@ -27,25 +25,21 @@ const COMPONENTS: Record<string, ComponentType<GameProps>> = {
   "sequence-recall": SequenceRecall,
   "object-position": ObjectPosition,
   "target-tap": TargetTap,
-  stroop: Stroop,
   "visual-scan": VisualScan,
   "rapid-sort": RapidSort,
   "quick-match": QuickMatch,
   "reaction-grid": ReactionGrid,
+  "speed-find": SpeedFind,
   "pattern-complete": PatternComplete,
   "odd-one-out": OddOneOut,
   "rule-switch": RuleSwitch,
-  "word-scramble": WordScramble,
   "mental-math": MentalMath,
   "number-sequence": NumberSequence,
-  "n-back": NBack,
-
   "word-search": WordSearch,
   "vocab-match": VocabMatch,
   "sudoku": Sudoku,
-  "mental-rotation": MentalRotation,
-  "maze-navigator": MazeNavigator,
-  "mirror-image": MirrorImage,
+  "distraction-filter": DistractionFilter,
+  "number-grid": NumberGrid,
 };
 
 type Phase = "intro" | "countdown" | "playing" | "results";
@@ -197,14 +191,15 @@ export default function GamePlayer() {
 
       {/* INTRO */}
       {phase === "intro" && (
-        <Card className="anim-fadeUp p-5 sm:p-7">
-          <div className="flex items-start gap-4">
+        <Card className="anim-fadeUp p-4 sm:p-5 md:p-7">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
             <span className={`grid size-14 shrink-0 place-items-center rounded-xl ${cat.softBg} ${cat.text}`}>
               <Icon name={cat.icon} size={28} />
             </span>
-            <div className="min-w-0">
-              <h2 className="text-xl font-black tracking-tight">{t(meta.nameKey)}</h2>
-              <div className="mt-1.5 flex flex-wrap items-center gap-2">
+            <div className="min-w-0 flex-1">
+              <h2 className="text-lg font-black tracking-tight sm:text-xl">{t(meta.nameKey)}</h2>
+              <p className="mt-1 text-xs text-mut sm:text-sm">{t(meta.descKey)}</p>
+              <div className="mt-2 flex flex-wrap items-center gap-2">
                 <Badge tone="acc">{t(meta.est)}</Badge>
                 <Badge tone={best !== null ? "gold" : "mut"}>
                   <Icon name="trophy" size={11} /> {best !== null ? `${t("common.best")}: ${best}` : t("gameui.noScore")}
@@ -217,7 +212,7 @@ export default function GamePlayer() {
               <h3 className="mb-1.5 text-[11px] font-black uppercase tracking-[0.18em] text-mut">{t("gameui.howTo")}</h3>
               <p className="text-sm leading-relaxed text-ink/90">{t(meta.howKey)}</p>
             </div>
-            <div className="flex items-center gap-2 rounded-lg bg-raise px-3 py-2.5 text-xs font-semibold text-mut">
+            <div className="flex flex-wrap items-center gap-2 rounded-lg bg-raise px-3 py-2.5 text-xs font-semibold text-mut">
               <Icon name="keyboard" size={16} className="shrink-0" />
               <span>{t("gameui.controls")}:</span>
               <span className="text-ink">{t(meta.keysKey)}</span>
@@ -231,8 +226,8 @@ export default function GamePlayer() {
 
       {/* COUNTDOWN */}
       {phase === "countdown" && (
-        <div className="flex h-[420px] items-center justify-center">
-          <span key={count} className="anim-tick font-mono text-8xl font-black text-acc" aria-live="assertive">
+        <div className="flex min-h-[300px] items-center justify-center sm:min-h-[420px]">
+          <span key={count} className="anim-tick font-mono text-6xl font-black text-acc sm:text-8xl" aria-live="assertive">
             {count > 0 ? count : t("gameui.go")}
           </span>
         </div>

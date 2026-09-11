@@ -75,23 +75,23 @@ export function RapidSort({ paused, t, fx, onScore, onFinish }: GameProps) {
         <HudChip icon="check" label={`${hits}/${tries}`} tone="text-good" />
         {streak >= 5 && <HudChip icon="zap" label={`×${Math.min(4, 1 + Math.floor(streak / 5))}`} tone="text-acc" />}
       </div>
-      <div className={`flex items-end justify-center gap-4 rounded-xl border border-line bg-surface py-8 ${flash === "bad" ? "anim-shake" : ""}`}>
+      <div className={`flex items-end justify-center gap-3 rounded-lg border border-line bg-surface py-6 sm:gap-4 sm:rounded-xl sm:py-8 ${flash === "bad" ? "anim-shake" : ""}`}>
         <div className="text-center">
-          <div className="text-[10px] font-black uppercase tracking-widest text-mut">{t("common.back")}</div>
-          <div className="tabular font-mono text-3xl font-bold text-mut sm:text-4xl" dir="ltr">{prev}</div>
+          <div className="text-[9px] font-black uppercase tracking-widest text-mut sm:text-[10px]">{t("common.back")}</div>
+          <div className="tabular font-mono text-2xl font-bold text-mut sm:text-3xl md:text-4xl" dir="ltr">{prev}</div>
         </div>
         <div className="pb-2 text-mut">→</div>
         <div className="text-center">
-          <div className="text-[10px] font-black uppercase tracking-widest text-acc">?</div>
-          <div key={cur} className="tabular anim-pop font-mono text-6xl font-black sm:text-7xl" dir="ltr">{cur}</div>
+          <div className="text-[9px] font-black uppercase tracking-widest text-acc sm:text-[10px]">?</div>
+          <div key={cur} className="tabular anim-pop font-mono text-5xl font-black sm:text-6xl md:text-7xl" dir="ltr">{cur}</div>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-3">
-        <button onClick={() => answer("up")} disabled={paused} className="btn-press flex min-h-[64px] items-center justify-center gap-2 rounded-xl bg-acc text-lg font-black text-white">
-          <span className="text-2xl" aria-hidden="true">↑</span> {t("gameui.higher")}
+      <div className="grid grid-cols-2 gap-2 sm:gap-3">
+        <button onClick={() => answer("up")} disabled={paused} className="btn-press flex min-h-[56px] items-center justify-center gap-2 rounded-lg bg-acc text-base font-black text-white sm:min-h-[64px] sm:text-lg">
+          <span className="text-xl sm:text-2xl" aria-hidden="true">↑</span> {t("gameui.higher")}
         </button>
-        <button onClick={() => answer("down")} disabled={paused} className="btn-press flex min-h-[64px] items-center justify-center gap-2 rounded-xl bg-acc text-lg font-black text-white">
-          <span className="text-2xl" aria-hidden="true">↓</span> {t("gameui.lower")}
+        <button onClick={() => answer("down")} disabled={paused} className="btn-press flex min-h-[56px] items-center justify-center gap-2 rounded-lg bg-acc text-base font-black text-white sm:min-h-[64px] sm:text-lg">
+          <span className="text-xl sm:text-2xl" aria-hidden="true">↓</span> {t("gameui.lower")}
         </button>
       </div>
       <p className="text-center text-xs text-mut">
